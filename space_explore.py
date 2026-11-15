@@ -60,13 +60,13 @@ elif choice == "Mission Planner":
     launch_date = st.date_input("Select your mission launch date:")
 
     # Space mission launch time
-    launch_time = st.date_input("Select your mission launch time")
+    launch_time = st.time_input("Select your mission launch time")
 
     # Select a spaceship type
     spaceship_type = st.selectbox("Choose your spaceship type:", ["Rocket", "Shuttle", "Space Station"])
 
     # Motivational space quote
-    category = st.selection("Pick a motivational space quote:",["Exploration","Discovery","Adventure"])
+    category = st.selectbox("Pick a motivational space quote:",["Exploration","Discovery","Adventure"])
     quotes = {
         "Exploration": "To explore the universe is to explore ourselves.",
         "Discovery": "Discovery is seeing what everybody else has seen, and thinking what nobody else has thought.",
